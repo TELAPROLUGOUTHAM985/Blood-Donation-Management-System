@@ -1,0 +1,186 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* CSS Variables */
+:root {
+    --navbar-height: 66px;
+    --primary-color: #79031b;
+    --secondary-color: #a2443e;
+    --bg-light: #f1d1cb;
+}
+
+/* Navigation Bar */
+#navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 10px 20px;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    height: var(--navbar-height);
+}
+
+#donate-text {
+    font-size: 1.8rem;
+    font-weight: bold;
+    font-style: italic;
+    color: red;
+    font-family: 'Poppins', sans-serif;
+   
+    position: relative;
+    top: -10px;
+}
+#logo img {
+    height: 50px;
+    border-radius: 50%;
+}
+
+#about-blood {
+    font-size: 1.5rem;
+    font-weight: italic;
+    color: white; /* Changed to white */
+    position: absolute;
+    top: 250px; /* Moves the text up */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 70%;
+}
+
+/* Navbar Links */
+#navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+    margin-right: 50px 90px;
+}
+
+#navbar ul li {
+    display: inline;
+}
+
+#navbar ul li a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-family: 'Exo 2', sans-serif;
+}
+
+#navbar ul li a:hover {
+    color: white;
+    background-color: var(--primary-color);
+}
+
+/* Background Image */
+.background {
+    width: 100%;
+    height: 100vh;
+    background: url('../img/bg.png') no-repeat center center/cover;
+}
+
+/* Services Section */
+.background2 {
+    background-color: var(--bg-light);
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin-top: -150px; /* Moves background2 further up */
+    flex-direction: column;
+    align-items: center;
+}
+
+.h-primary {
+    margin-bottom: 100px;
+}
+
+/* Service Box Container */
+#services {
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+    padding-bottom: 40px;
+    width: 85%;
+    margin-top: -100px; /* Moves services slightly more up */
+    flex-wrap: nowrap;
+}
+
+/* Service Box Styling */
+#services .box {
+    background: white;
+    border: 2px solid #ddd;
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 280px;
+    height: 380px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Service Box Images */
+#services .box img {
+    width: 100%;
+    height: 250px; /* Increased height */
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Headings inside boxes */
+#services .box h2 {
+    font-size: 1.8rem;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+/* Buttons inside boxes */
+#services .box .btn {
+    width: 100%;
+    font-size: 1.2rem;
+}
+
+/* Buttons */
+.btn {
+    padding: 10px 30px;
+    border: 1px solid var(--secondary-color);
+    color: var(--primary-color);
+    background-color: #e19588;
+    font-size: 1.2rem;
+    border-radius: 20px;
+    font-family: 'Exo 2', sans-serif;
+    cursor: pointer;
+}
+
+.btn:hover {
+    color: white;
+    background-color: var(--primary-color);
+}
+
+/* Utility Classes */
+.h-secondary {
+    font-size: 2rem;
+    padding: 12px;
+    font-family: 'Exo 2', sans-serif;
+    text-align: center;
+}
+
+.center {
+    text-align: center;
+}
+
+/* Ensure scrolling only shows white background */
+body {
+    background-color: white;
+}

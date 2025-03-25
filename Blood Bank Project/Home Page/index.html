@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Donation Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navbar at the top -->
+    <nav id="navbar">
+        <div id="logo">
+            <img src="img/logo.webp" alt="Blood Donation">
+            <span id="donate-text">Donate Blood</span>
+        </div>
+        <ul>
+            <li class="item"><a href="#">HOME</a></li>
+            <li class="item"><a href="#">ABOUT US</a></li>
+            <li class="item"><a href="#">CONTACT US</a></li>
+        </ul>
+    </nav>
+
+    <!-- Background image container -->
+    <div class="background">
+        <img src="img/bg.png" alt="Background Picture">
+    </div>
+    <section id="about-blood">
+        <h2>Donate Blood Save Lives...</h2><br>
+        <p>Blood is the essence of life, and donating it is one of the most selfless acts of kindness. Every drop can save a life, offering hope to accident victims, patients undergoing surgeries, and those battling severe illnesses. A single donation can help multiple individuals, making you a hero in someone’s story. Regular blood donation not only benefits recipients but also promotes better health for donors. Join the movement today—because a small act of generosity can make a world of difference!</p>
+    </section>    
+    <!-- Services Section -->
+    <div class="background2">
+        <section class="services-container">
+            <h1 class="h-primary center"></h1>
+            <div id="services">
+                <div class="box">
+                    <img src="img/admin.webp" alt="Admin">
+                    <h2 class="h-secondary center">ADMIN</h2>
+                    <button class="btn" data-role="admin" data-action="login">LOGIN</button>
+                    <button class="btn" data-role="admin" data-action="signup">SIGN UP</button>
+                </div>
+                <div class="box">
+                    <img src="img/donar.webp" alt="Donor">
+                    <h2 class="h-secondary center">DONOR</h2>
+                    <button class="btn" data-role="donor" data-action="login">LOGIN</button>
+                    <button class="btn" data-role="donor" data-action="signup">SIGN UP</button>
+                </div>
+                <div class="box">
+                    <img src="img/patient.webp" alt="Patient">
+                    <h2 class="h-secondary center">PATIENT</h2>
+                    <button class="btn" data-role="patient" data-action="login">LOGIN</button>
+                    <button class="btn" data-role="patient" data-action="signup">SIGN UP</button>
+                </div>
+            </div>                        
+        </section>
+    </div>
+
+    <script src="assets/homepage.js"></script>
+</body>
+</html>
